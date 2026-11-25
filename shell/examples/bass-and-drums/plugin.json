@@ -1,0 +1,12 @@
+{
+  "name": "Bass and Drums",
+  "slug": "bass-and-drums",
+  "kind": "midi",
+  "bundleId": "com.pangea.bass-and-drums",
+  "fxBundleId": "com.pangea.bass-and-drums.fx",
+  "manufacturerCode": "Pnga",
+  "pluginCode": "Bsdr",
+  "fxPluginCode": "Bsdx",
+  "version": "0.1.0",
+  "description": "A bass line on channel 1 and a drum groove on channel 10 in one tool: a MIDI tool built on Line and Drums, from the MIDI shelf (Bass Hand's and Drum Hand's engines)."
+}

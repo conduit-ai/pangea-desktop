@@ -1,0 +1,319 @@
+/* Prerequisites */
+
+.checks .check {
+  display: grid;
+  grid-template-columns: 18px 150px 1fr;
+  gap: 10px;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+}
+
+.checks .check:last-child {
+  border-bottom: none;
+}
+
+.checks .check .mark {
+  font-weight: 700;
+  text-align: center;
+}
+
+.checks .check .name {
+  font-weight: 500;
+}
+
+.checks .check .detail {
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.checks .check .fix {
+  margin-top: 4px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.checks .check .fix code {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 3px 8px;
+  user-select: text;
+  cursor: text;
+  overflow-wrap: anywhere;
+}
+
+/* Sign in */
+
+.signin {
+  max-width: 520px;
+  margin: 40px auto 0;
+  text-align: center;
+}
+
+.signin .usercode {
+  font-family: var(--mono);
+  font-size: 34px;
+  letter-spacing: 6px;
+  color: var(--accent);
+  padding: 14px 0;
+  user-select: text;
+  cursor: text;
+}
+
+.signin .actions {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Projects */
+
+.projects .toolbar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.project .meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: var(--muted);
+  font-size: 12.5px;
+  margin-top: 2px;
+}
+
+.project .name {
+  font-weight: 600;
+}
+
+/* The category menu beside the search box, and a plugin's tags under its line (decision 85). */
+.projects .toolbar select {
+  font: inherit;
+  flex: none;
+  max-width: 44%;
+  padding: 7px 10px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  outline: none;
+}
+
+.projects .toolbar select:focus {
+  border-color: var(--accent);
+}
+
+.project .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 10px;
+  color: var(--muted);
+  font-size: 11.5px;
+  margin-top: 3px;
+}
+
+.project .actions {
+  display: flex;
+  gap: 6px;
+}
+
+/* Build */
+
+.build .job {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.build .spinner {
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.log {
+  background: #0f1012;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  max-height: 320px;
+  overflow: auto;
+  font-family: var(--mono);
+  font-size: 12px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  user-select: text;
+  cursor: text;
+}
+
+.log .l-stderr {
+  color: #f2b8b8;
+}
+
+.log .l-app {
+  color: var(--muted);
+}
+
+.history .result {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.history .result:last-child {
+  border-bottom: none;
+}
+
+.history .result summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 12.5px;
+  margin-top: 4px;
+}
+
+.history .result .log {
+  margin-top: 8px;
+  max-height: 240px;
+}
+
+/* Settings */
+
+.settings .path {
+  display: flex;
+  gap: 8px;
+}
+
+.settings details.developers {
+  margin-top: 8px;
+}
+
+.settings details.developers summary {
+  color: var(--muted);
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+
+/* Setup */
+
+.setup h1 {
+  margin-bottom: 4px;
+}
+
+.setup button.big {
+  font-size: 15px;
+  padding: 9px 18px;
+}
+
+.setup .good {
+  color: var(--ok);
+}
+
+.setup ol.steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.setup .step {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 10px;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.setup .step h2 {
+  margin: 0;
+}
+
+.setup .step p {
+  margin: 6px 0 0;
+}
+
+.setup .step .row {
+  margin-top: 8px;
+}
+
+.setup .step .mark {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  line-height: 22px;
+}
+
+.setup .step.state-done .mark {
+  color: var(--ok);
+}
+
+.setup .step.state-doing .mark,
+.setup .step.state-needs-you .mark {
+  color: var(--accent);
+}
+
+.setup .step.state-failed .mark {
+  color: var(--bad);
+}
+
+.setup .step.state-waiting {
+  opacity: 0.6;
+}
+
+.setup .step .daw {
+  padding-top: 6px;
+  border-top: 1px solid var(--border);
+}
+
+.setup .step .daw-done .daw-mark {
+  color: var(--ok);
+  font-weight: 700;
+}
+
+.setup .step .daw-waiting {
+  color: var(--muted);
+}
+
+/* The Pangea plugin and Pangea's tools */
+
+.host-plugin p.warn {
+  color: var(--warn);
+}
+
+.host-plugin pre.log.tail,
+.self-check pre.log.tail {
+  margin-top: 8px;
+  max-height: 120px;
+  overflow: hidden;
+}
+
+/* About */
+
+.about ul.licences {
+  margin: 4px 0 10px;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.about ul.licences li {
+  margin-bottom: 6px;
+}
+
+.about ul.licences b {
+  color: var(--text);
+  font-weight: 500;
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Two Hands",
+  "slug": "two-hands",
+  "kind": "midi",
+  "bundleId": "com.pangea.two-hands",
+  "fxBundleId": "com.pangea.two-hands.fx",
+  "manufacturerCode": "Pnga",
+  "pluginCode": "Twhd",
+  "fxPluginCode": "Twhx",
+  "version": "0.1.0",
+  "description": "Two piano hands, 3 against 4, following the host: chord tones on channel 1 and a four-note figure on channel 2, with accents by rule, tension, balance and variations. A small Pattern Player."
+}

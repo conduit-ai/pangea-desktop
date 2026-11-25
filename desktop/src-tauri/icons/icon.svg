@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="14"/>
+      <feOffset dy="10"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.22"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="#F0EEE5" filter="url(#shadow)"/>
+  <rect x="102" y="102" width="820" height="820" rx="183" fill="none" stroke="#C9C5B9" stroke-width="4"/>
+  <path d="M330.91 746.02L330.91 277.98L522.52 277.98Q575.29 277.98 613.62 298.4Q651.94 318.82 672.51 355.26Q693.09 391.69 693.09 439.75Q693.09 488.13 672.04 523.94Q651 559.75 612.05 579.85Q573.1 599.95 519.38 599.95L441.8 599.95L441.8 746.02L330.91 746.02ZM441.8 512.31L499.28 512.31Q525.35 512.31 542.94 503.2Q560.53 494.1 569.33 477.76Q578.12 461.43 578.12 439.75Q578.12 417.77 569.33 401.59Q560.53 385.41 542.78 376.62Q525.04 367.82 498.96 367.82L441.8 367.82L441.8 512.31Z" fill="#222825"/>
+</svg>

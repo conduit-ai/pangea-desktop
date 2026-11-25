@@ -1,0 +1,10 @@
+{
+  "name": "Stomp Fuzz",
+  "slug": "stomp-fuzz",
+  "kind": "effect",
+  "bundleId": "com.pangea.stomp-fuzz",
+  "manufacturerCode": "Pnga",
+  "pluginCode": "Stfz",
+  "version": "0.1.0",
+  "description": "A fuzz pedal with a tone control and a boost footswitch."
+}

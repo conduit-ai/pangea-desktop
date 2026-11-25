@@ -1,0 +1,260 @@
+:root {
+  --bg: #141517;
+  --panel: #1c1e22;
+  --panel-2: #22252a;
+  --border: #2a2d33;
+  --text: #e6e6e6;
+  --muted: #9a9fa8;
+  --accent: #f0b35c;
+  --accent-text: #141517;
+  --ok: #6fcf97;
+  --warn: #f0b35c;
+  --bad: #ef6b6b;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+  cursor: default;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 8px;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 14px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 12px;
+}
+
+p {
+  margin: 0 0 8px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code,
+pre {
+  font-family: var(--mono);
+  font-size: 12.5px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.mono {
+  font-family: var(--mono);
+}
+
+.selectable {
+  user-select: text;
+  cursor: text;
+}
+
+button,
+.button {
+  font: inherit;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--panel-2);
+  color: var(--text);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+button:hover:not(:disabled) {
+  border-color: #3a3e46;
+  background: #2a2d33;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+button.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-text);
+  font-weight: 600;
+}
+
+button.primary:hover:not(:disabled) {
+  background: #f5c276;
+  border-color: #f5c276;
+}
+
+button.quiet {
+  background: transparent;
+  border-color: transparent;
+  color: var(--muted);
+}
+
+button.quiet:hover:not(:disabled) {
+  color: var(--text);
+  background: var(--panel-2);
+  border-color: var(--border);
+}
+
+input[type="text"],
+input[type="url"],
+input[type="search"] {
+  font: inherit;
+  width: 100%;
+  padding: 7px 10px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  outline: none;
+  user-select: text;
+}
+
+input:focus {
+  border-color: var(--accent);
+}
+
+.badge {
+  display: inline-block;
+  padding: 1px 7px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  font-size: 11px;
+  color: var(--muted);
+  text-transform: lowercase;
+}
+
+.badge.effect {
+  color: #9fc5ff;
+  border-color: #2b3f5c;
+}
+
+.badge.instrument {
+  color: #8fe3c9;
+  border-color: #27584a;
+}
+
+/* A MIDI tool keeps its capitals: "MIDI tool", not "midi tool". */
+.badge.midi {
+  color: #e3c98f;
+  border-color: #5a4a27;
+  text-transform: none;
+}
+
+/* Where a plugin is filed (decision 85). It keeps its capitals: "Mono synth", "EQ". */
+.badge.category {
+  color: var(--text);
+  border-color: var(--muted);
+  text-transform: none;
+}
+
+.badge.public {
+  color: var(--ok);
+  border-color: #2b5a3e;
+}
+
+.status-ok {
+  color: var(--ok);
+}
+
+.status-warn {
+  color: var(--warn);
+}
+
+.status-missing {
+  color: var(--bad);
+}
+
+.error {
+  color: var(--bad);
+}
+
+.notice {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--panel);
+  margin-bottom: 12px;
+}
+
+.notice.bad {
+  border-color: #5a2b2b;
+}
+
+.notice.good {
+  border-color: #2b5a3e;
+}
+
+.notice.warn {
+  border-color: #5a4a2b;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.row.between {
+  justify-content: space-between;
+}
+
+.grow {
+  flex: 1;
+  min-width: 0;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

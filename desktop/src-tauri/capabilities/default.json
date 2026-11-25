@@ -1,0 +1,14 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "The main window. All network, keychain and build work happens in Rust commands; the page only needs the core APIs plus the deep-link event.",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "core:event:default",
+    "deep-link:default",
+    "opener:default",
+    "store:default",
+    "dialog:default"
+  ]
+}

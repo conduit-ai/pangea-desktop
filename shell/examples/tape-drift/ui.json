@@ -1,0 +1,18 @@
+{
+  "title": "Tape Drift",
+  "palette": { "bg": "#EEE5D3", "panel": "#E3D8C2", "accent": "#C8843A", "text": "#2A2620" },
+  "knobStyle": "round",
+  "style": "vintage",
+  "layout": {
+    "width": 720,
+    "height": 184,
+    "items": [
+      { "key": "Time", "x": 24, "y": 24, "size": "l" },
+      { "key": "Feedback", "x": 168, "y": 40, "size": "m", "label": "Repeats" },
+      { "key": "Tone", "x": 280, "y": 40, "size": "m" },
+      { "key": "Wow", "x": 400, "y": 56, "size": "s", "label": "Drift" },
+      { "key": "Flutter", "x": 496, "y": 56, "size": "s", "hidden": true },
+      { "key": "Mix", "x": 576, "y": 24, "size": "l", "label": "Blend" }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "title": "Poly Saw",
+  "palette": { "bg": "#2E3B36", "panel": "#25312C", "accent": "#FF8A6E", "text": "#EDEBE3" },
+  "knobStyle": "arc",
+  "style": "playful"
+}

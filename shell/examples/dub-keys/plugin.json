@@ -1,0 +1,10 @@
+{
+  "name": "Dub Keys",
+  "slug": "dub-keys",
+  "kind": "instrument",
+  "bundleId": "com.pangea.dub-keys",
+  "manufacturerCode": "Pnga",
+  "pluginCode": "Dbky",
+  "version": "0.1.0",
+  "description": "Eight voice keys into an echo that all the voices share."
+}

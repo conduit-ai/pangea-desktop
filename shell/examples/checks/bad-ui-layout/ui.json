@@ -1,0 +1,13 @@
+{
+  "title": "Layout",
+  "palette": { "bg": "#EEE5D3", "panel": "#E3D8C2", "accent": "#C8843A", "text": "#2A2620" },
+  "knobStyle": "round",
+  "layout": {
+    "width": 800,
+    "height": 2000,
+    "items": [
+      { "key": "Drive", "x": 3.5, "y": -8, "size": "xl" },
+      { "key": "Mix", "x": 721, "y": 24, "size": "m" }
+    ]
+  }
+}

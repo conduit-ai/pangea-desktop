@@ -1,0 +1,25 @@
+# How a logic module is compiled into the native plugin (platform/logic_native.cpp, its own
+# translation unit). Read by CMakeLists.txt and tools/test-budget.sh: every line that starts
+# with a dash is one flag. docs/midi-tools.md, "The step budget"; decision 46.
+#
+# The step budget: every edge of the module's code calls __sanitizer_cov_trace_pc_guard
+# (PangeaLogicGuard.h), which counts it and watches the stack. no-prune keeps the call on
+# blocks that loop to themselves; without -fno-finite-loops clang may delete a loop that
+# never ends instead of keeping it, and the budget could not stop it.
+-fsanitize-coverage=trace-pc-guard,no-prune
+-fno-finite-loops
+# The same rounding as WebAssembly: no fused multiply-add (Two Hands' gold test).
+-ffp-contract=off
+# As in WebAssembly: no exceptions, no run-time types. A stopped call leaves through
+# _longjmp, so a function-local static must not hold a lock while it is being made.
+-fno-exceptions
+-fno-rtti
+-fno-threadsafe-statics
+# What a budget cannot stop, refused when it compiles: a stack that grows by a run-time
+# amount, a frame too large for an audio thread, and code that runs when the plugin loads
+# or unloads, outside any budget. The server compiles with the same refusals.
+-Werror=vla
+-Wframe-larger-than=16384
+-Werror=frame-larger-than
+-Werror=global-constructors
+-Werror=exit-time-destructors

@@ -1,0 +1,10 @@
+{
+  "name": "Poly Saw",
+  "slug": "poly-saw",
+  "kind": "instrument",
+  "bundleId": "com.pangea.poly-saw",
+  "manufacturerCode": "Pnga",
+  "pluginCode": "Psaw",
+  "version": "0.1.0",
+  "description": "Eight voice sawtooth synth with a resonant low-pass filter."
+}

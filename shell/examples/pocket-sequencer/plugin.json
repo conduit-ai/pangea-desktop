@@ -1,0 +1,10 @@
+{
+  "name": "Pocket Sequencer",
+  "slug": "pocket-sequencer",
+  "kind": "instrument",
+  "bundleId": "com.pangea.pocket-sequencer",
+  "manufacturerCode": "Pnga",
+  "pluginCode": "Pksq",
+  "version": "0.1.0",
+  "description": "An instrument that plays itself: a 16 step bass line on the step clock in its effect section (decisions 124 and 125), reading no key. It closes over 3 ms when the song stops and is silent while it is stopped."
+}

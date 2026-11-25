@@ -1,0 +1,10 @@
+{
+  "name": "Step Drive Filter",
+  "slug": "step-drive-filter",
+  "kind": "effect",
+  "bundleId": "com.pangea.step-drive-filter",
+  "manufacturerCode": "Pnga",
+  "pluginCode": "Stdf",
+  "version": "0.1.0",
+  "description": "Step Drive Filter, made by the Pangea team, with its step lights made to decision 89's convention."
+}

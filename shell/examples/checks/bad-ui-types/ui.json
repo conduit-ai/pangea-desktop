@@ -1,0 +1,7 @@
+{
+  "title": 42,
+  "palette": ["#EEE5D3", "#E3D8C2", "#C8843A", "#2A2620"],
+  "knobStyle": "round",
+  "style": null,
+  "layout": { "width": 720, "height": 240, "items": { "key": "Mix", "x": 24, "y": 24, "size": "m", "hidden": "yes" } }
+}

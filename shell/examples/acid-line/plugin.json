@@ -1,0 +1,10 @@
+{
+  "name": "Acid Line",
+  "slug": "acid-line",
+  "kind": "instrument",
+  "bundleId": "com.pangea.acid-line",
+  "manufacturerCode": "Pnga",
+  "pluginCode": "Acdl",
+  "version": "0.1.0",
+  "description": "A 16-step acid sequencer synth driven by a logic module. Follows the host transport."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Hands and Drums",
+  "slug": "hands-and-drums",
+  "kind": "midi",
+  "bundleId": "com.pangea.hands-and-drums",
+  "fxBundleId": "com.pangea.hands-and-drums.fx",
+  "manufacturerCode": "Pnga",
+  "pluginCode": "Hndr",
+  "fxPluginCode": "Hndx",
+  "version": "0.1.0",
+  "description": "Two piano hands on channels 1 and 2 and a drum groove on channel 10 in one tool: a MIDI tool built on Keys and Drums, from the MIDI shelf (Pattern Player's and Drum Hand's engines)."
+}

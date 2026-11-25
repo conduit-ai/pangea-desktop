@@ -1,0 +1,16 @@
+{
+  "title": "  Good Interface  ",
+  "palette": { "bg": "#1F1B2E", "panel": "#29243b", "accent": "#8FBF9A", "text": "#EDEBE3" },
+  "knobStyle": "arc",
+  "style": "retro",
+  "futureField": { "ignored": true },
+  "layout": {
+    "width": 720.0,
+    "height": 1600,
+    "items": [
+      { "key": "Tone/Drive", "x": 0, "y": 0, "size": "s" },
+      { "key": "Mix", "x": 720, "y": 1600, "size": "l", "label": "Blend 🎛️", "hidden": false },
+      { "key": "Échelle", "x": 24, "y": 1.6e2, "size": "m", "label": " Forty characters exactly, no more, okay ", "hidden": true }
+    ]
+  }
+}

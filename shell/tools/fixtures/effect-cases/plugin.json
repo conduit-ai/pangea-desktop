@@ -1,0 +1,10 @@
+{
+  "name": "Effect Cases",
+  "slug": "effect-cases",
+  "kind": "instrument",
+  "bundleId": "com.pangea.effect-cases",
+  "manufacturerCode": "Pnga",
+  "pluginCode": "Efca",
+  "version": "0.1.0",
+  "description": "An instrument whose effect section holds the awkward cases, for tools/test-effect.sh."
+}

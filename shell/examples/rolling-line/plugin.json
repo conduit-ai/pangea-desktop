@@ -1,0 +1,12 @@
+{
+  "name": "Rolling Line",
+  "slug": "rolling-line",
+  "kind": "midi",
+  "bundleId": "com.pangea.rolling-line",
+  "fxBundleId": "com.pangea.rolling-line.fx",
+  "manufacturerCode": "Pnga",
+  "pluginCode": "Rlln",
+  "fxPluginCode": "Rllx",
+  "version": "0.1.0",
+  "description": "A rolling bass that follows the chords and walks into each new one: a MIDI tool built on Line, from the MIDI shelf (Bass Hand's engine)."
+}

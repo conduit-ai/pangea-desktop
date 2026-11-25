@@ -1,0 +1,48 @@
+The Pangea shell
+Copyright (C) 2026 Conduit AI Limited
+
+The Pangea shell turns a Pangea project into an Audio Unit and a VST3 on your own Mac, and
+builds the Pangea plugin. It is built on JUCE.
+
+Conduit AI's own code in this folder is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later version. The full
+text of the licence is in LICENSE, beside this file.
+
+It is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even
+the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero
+General Public License for more details.
+
+The Pangea desktop app carries this folder as source, and the plugins it builds on your Mac are
+built from it. Conduit AI also publishes it, with the desktop app, as a public repository; the
+app's About section gives its address.
+
+Parts by another author
+
+The Felt look in platform/web (the Felt parts of pangea.css, pangea.js, mapping.js, host.js,
+builder.js and harmony.js, as the first line of each says) and six examples (the whole of the
+logic.cpp of examples/bass-and-drums, hands-and-drums, pocket-drums, ostinato-hands,
+rolling-line and two-hands, with two-hands' README.md and test folder) are not Conduit AI's
+code. Since 25 November 2026 their author offers them, as they are in this folder, under the GNU
+Affero General Public License, version 3 or later, as well as under his own licence, at your
+choice: platform/web/FELT-LICENSE.md has both, and each of the six logic.cpp says so. Five of
+them also carry the MIDI shelf's licence line, which names library/midi/LICENSE.md, in Pangea's
+own repository only; its text is the first part of platform/web/FELT-LICENSE.md. So all the code
+in this folder may be used under the GNU Affero General Public License.
+
+Third parties
+
+- JUCE 8.0.10, by Raw Material Software Limited: under the GNU Affero General Public License,
+  version 3, or JUCE's own licence (https://juce.com/legal/juce-8-licence/). JUCE is not in this
+  folder: the desktop app downloads it from JUCE's own release on your Mac and checks it, and a
+  developer clones it into JUCE/. The shell compiles JUCE's JavaScript bridge
+  (modules/juce_gui_extra/native/javascript) into the web panel.
+- The VST3 SDK 3.7.12, by Steinberg Media Technologies GmbH, inside JUCE: under the GNU General
+  Public License, version 3, or Steinberg's VST3 licence. The GNU Affero General Public License,
+  version 3, allows the two to be combined.
+- The fonts in platform/web/fonts, by their authors: each under the SIL Open Font License,
+  version 1.1. Each family's licence, with its copyright line, is in platform/web/fonts/licences.
+- Faust, by GRAME: the shell compiles each plugin's Faust code to C++ with the Faust compiler and
+  against Faust's architecture headers (faust/dsp, faust/gui), which are under the GNU Lesser
+  General Public License, version 2.1 or later, with the Faust exception. Neither is in this
+  folder: the desktop app carries them, with their licences and the compiler's source.

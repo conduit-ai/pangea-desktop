@@ -1,0 +1,6 @@
+{
+  "title": "Glass Chorus",
+  "palette": { "bg": "#F4F6F8", "panel": "#E8EDF2", "accent": "#3B6FE0", "text": "#1D2733" },
+  "knobStyle": "arc",
+  "style": "minimal"
+}

@@ -1,0 +1,8 @@
+{
+  "browser": { "faustwasm": "0.20.0", "libfaust": "2.90.19" },
+  "native": {
+    "faust": "2.88.0",
+    "source": "The desktop app carries it: GRAME's 2.88.0 release built without LLVM by desktop/scripts/build-faust.sh (desktop/tools.json pins its address and SHA-256). A development build uses Homebrew's 2.88.0, which writes the same C++ for every .dsp in the repository (desktop/scripts/compare-faust.sh)."
+  },
+  "note": "No faustwasm build matches a released Faust (0.17.0 is 2.87.7, 0.18.5 is 2.89.2, 0.19.0 is 2.90.0, 0.20.0 is 2.90.19). The browser is pinned to 0.20.0 and the native toolchain to the nearest release. To close the gap, build the Faust the desktop app carries from the master-dev commit that faustwasm 0.20.0 was built from (desktop/scripts/build-faust.sh), and record it here. The bench tests of 4 November 2026 showed audible drift between Faust versions once wow and flutter got going, so the gap can be heard in some plugins."
+}

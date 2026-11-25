@@ -1,0 +1,51 @@
+[package]
+name = "pangea-desktop"
+version = "0.1.0"
+description = "Pangea desktop app: builds and installs Pangea plugins into Logic on the user's Mac"
+authors = ["Conduit AI"]
+license = "AGPL-3.0-or-later"
+edition = "2021"
+rust-version = "1.90"
+
+[lib]
+name = "pangea_desktop_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.7", features = [] }
+
+[dependencies]
+# Tauri 2 only. Tauri 3 alphas are on crates.io, so every tauri crate is pinned to its 2.x line.
+tauri = { version = "2.12", features = [] }
+tauri-plugin-store = "2.5"
+tauri-plugin-opener = "2.7"
+tauri-plugin-deep-link = "2.6"
+tauri-plugin-dialog = "2.8"
+
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+reqwest = { version = "0.12", features = ["json"] }
+tokio = { version = "1", features = ["process", "io-util", "sync", "time", "macros", "rt-multi-thread"] }
+keyring = "4"
+url = "2"
+anyhow = "1"
+chrono = { version = "0.4", features = ["clock"] }
+# The SHA-256 of what the app downloads (tools.rs). Already in the tree through tauri-codegen.
+sha2 = "0.10"
+
+[dev-dependencies]
+# A small HTTP server in tools.rs's tests, to cut a download part way and carry it on.
+tokio = { version = "1", features = ["net"] }
+
+# `strip = "none"` is deliberate. Cargo's release default (`strip = "debuginfo"`)
+# makes rustc run macOS 26's `strip` on every proc-macro dylib it builds, and dyld
+# then refuses some of them ("mis-aligned LINKEDIT string pool"), which surfaces as
+# "can't find crate for `tauri_macros`" (or `phf_macros`, `derive_more-impl`) in a
+# release build. Whether a given dylib breaks depends on its string pool size, so
+# the failure looked random. The app binary is a few megabytes larger; nothing else changes.
+[profile.release]
+codegen-units = 1
+lto = "thin"
+opt-level = "s"
+panic = "abort"
+strip = "none"

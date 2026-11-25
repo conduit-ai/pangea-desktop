@@ -1,0 +1,10 @@
+{
+  "name": "Effect Root",
+  "slug": "effect-root",
+  "kind": "instrument",
+  "bundleId": "com.pangea.effect-root",
+  "manufacturerCode": "Pnga",
+  "pluginCode": "Efrt",
+  "version": "0.1.0",
+  "description": "An instrument whose effect section is one group, for tools/test-effect.sh."
+}

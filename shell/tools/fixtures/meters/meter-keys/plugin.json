@@ -1,0 +1,10 @@
+{
+  "name": "Meter Keys",
+  "slug": "meter-keys",
+  "kind": "instrument",
+  "bundleId": "com.pangea.meter-keys",
+  "manufacturerCode": "Pnga",
+  "pluginCode": "Mtky",
+  "version": "0.1.0",
+  "description": "A test instrument with a meter in its voice and one in its effect section."
+}

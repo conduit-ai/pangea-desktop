@@ -1,0 +1,16 @@
+{
+  "title": "Stomp Fuzz",
+  "palette": { "bg": "#2F8F5B", "panel": "#287A4E", "accent": "#FF4D3D", "text": "#F4F1E6" },
+  "knobStyle": "round",
+  "style": "pedal",
+  "layout": {
+    "width": 720,
+    "height": 344,
+    "items": [
+      { "key": "Level", "x": 160, "y": 40, "size": "m" },
+      { "key": "Fuzz", "x": 304, "y": 24, "size": "l" },
+      { "key": "Tone", "x": 472, "y": 40, "size": "m" },
+      { "key": "Boost", "x": 304, "y": 184, "size": "l", "label": "Stomp" }
+    ]
+  }
+}

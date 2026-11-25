@@ -1,0 +1,10 @@
+{
+  "name": "Kick Duck",
+  "slug": "kick-duck",
+  "kind": "effect",
+  "bundleId": "com.pangea.kick-duck",
+  "manufacturerCode": "Pnga",
+  "pluginCode": "Kdck",
+  "version": "0.1.0",
+  "description": "A compressor that ducks the sound when the kick in its sidechain hits."
+}

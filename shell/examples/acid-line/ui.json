@@ -1,0 +1,6 @@
+{
+  "title": "Acid Line",
+  "palette": { "bg": "#1F1B2E", "panel": "#29243B", "accent": "#8FBF9A", "text": "#EDEBE3" },
+  "knobStyle": "arc",
+  "style": "retro"
+}

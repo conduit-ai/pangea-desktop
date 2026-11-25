@@ -1,0 +1,11 @@
+{
+  "title": "Meter Keys",
+  "palette": {
+    "bg": "#EEE5D3",
+    "panel": "#E3D8C2",
+    "accent": "#C8843A",
+    "text": "#2A2620"
+  },
+  "knobStyle": "round",
+  "style": "vintage"
+}

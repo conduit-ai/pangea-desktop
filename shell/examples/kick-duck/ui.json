@@ -1,0 +1,6 @@
+{
+  "title": "Kick Duck",
+  "palette": { "bg": "#1D2320", "panel": "#27302B", "accent": "#E0A458", "text": "#EEF0EA" },
+  "knobStyle": "arc",
+  "style": "minimal"
+}

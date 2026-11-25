@@ -1,0 +1,10 @@
+{
+  "name": "Glass Chorus",
+  "slug": "glass-chorus",
+  "kind": "effect",
+  "bundleId": "com.pangea.glass-chorus",
+  "manufacturerCode": "Pnga",
+  "pluginCode": "Glch",
+  "version": "0.1.0",
+  "description": "A stereo chorus with up to three voices, a wide switch and a wobble button."
+}

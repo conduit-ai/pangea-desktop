@@ -1,0 +1,11 @@
+{
+  "name": "MIDI Steps",
+  "slug": "midi-steps",
+  "kind": "midi",
+  "bundleId": "com.pangea.midi-steps",
+  "manufacturerCode": "Pnga",
+  "pluginCode": "Mstp",
+  "fxPluginCode": "Mstx",
+  "version": "0.1.0",
+  "description": "The smallest MIDI tool: a four-step arpeggio with accent bars. The contract fixture for the MIDI tools experiment."
+}

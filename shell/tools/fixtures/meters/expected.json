@@ -1,0 +1,80 @@
+{
+  "step-drive": {
+    "kind": "effect",
+    "meters": [
+      {
+        "key": "Input/In L",
+        "label": "In L",
+        "groups": [
+          "Input"
+        ],
+        "min": -60,
+        "max": 6,
+        "unit": "dB",
+        "kind": "level"
+      },
+      {
+        "key": "Input/In R",
+        "label": "In R",
+        "groups": [
+          "Input"
+        ],
+        "min": -60,
+        "max": 6,
+        "unit": "dB",
+        "kind": "level"
+      },
+      {
+        "key": "Comp/Gain Reduction",
+        "label": "Gain Reduction",
+        "groups": [
+          "Comp"
+        ],
+        "min": 0,
+        "max": 20,
+        "unit": "dB",
+        "kind": "gr"
+      },
+      {
+        "key": "Output/Out L",
+        "label": "Out L",
+        "groups": [
+          "Output"
+        ],
+        "min": -60,
+        "max": 6,
+        "unit": "dB",
+        "kind": "level"
+      },
+      {
+        "key": "Output/Out R",
+        "label": "Out R",
+        "groups": [
+          "Output"
+        ],
+        "min": -60,
+        "max": 6,
+        "unit": "dB",
+        "kind": "level"
+      }
+    ],
+    "playheads": [
+      0
+    ]
+  },
+  "meter-keys": {
+    "kind": "instrument",
+    "meters": [
+      {
+        "key": "Level",
+        "label": "Level",
+        "groups": [],
+        "min": -60,
+        "max": 0,
+        "unit": "dB",
+        "kind": "level"
+      }
+    ],
+    "playheads": []
+  }
+}

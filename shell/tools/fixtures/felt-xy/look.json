@@ -1,0 +1,26 @@
+{
+  "layout": "side_columns",
+  "material": "felt",
+  "variant": "dark",
+  "details": [],
+  "font": "jost",
+  "palette": {
+    "bg": "#181714",
+    "panel": "#1D1B18",
+    "text": "#EDE5D5",
+    "accent": "#B99A65",
+    "highlight": "#BDB5A3"
+  },
+  "knob_style": "felt_ring",
+  "fader_style": "flat_line",
+  "switch_style": "lit_button",
+  "selector_style": "dropdown",
+  "group_style": "card",
+  "tab_style": "pill",
+  "header_bar": true,
+  "title": {
+    "text": "Two Hands",
+    "size": "small",
+    "placement": "top_left"
+  }
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  The entitlements Pangea.app is signed with, under the hardened runtime. Empty on purpose: every
+  thing the app does is allowed to a hardened app that is not sandboxed, and each exception the
+  hardened runtime offers would weaken it for nothing. Apple, "Hardened Runtime"
+  (developer.apple.com/documentation/security/hardened-runtime), lists the exceptions; for each
+  need of Pangea:
+
+  - Running the tools it carries (faust, ninja in Contents/MacOS, copied to Application Support)
+    and the compiler it calls (Apple's clang through /usr/bin, Kitware's cmake): these are child
+    processes. The hardened runtime governs the code inside the app's own process; a child runs
+    under its own signature. No entitlement.
+  - Loading code: the app loads no plugin and no module (the Pangea plugin loads modules inside
+    the DAW, decision 65), so not com.apple.security.cs.disable-library-validation.
+  - JavaScript in the window: WebKit runs it in its own processes, so not
+    com.apple.security.cs.allow-jit or allow-unsigned-executable-memory. Faust is built without
+    LLVM and compiles nothing in memory, so the tools need neither.
+  - Environment: the app sets PATH, HOME, DEVELOPER_DIR and SDKROOT for its children and no DYLD_
+    variable, so not com.apple.security.cs.allow-dyld-environment-variables.
+  - Network, the keychain, files under the home folder, signals to the Audio Unit registrar: open
+    to an app outside the App Sandbox; no entitlement. No camera, microphone, location, contacts,
+    calendars, photos or Apple Events (the resource access entitlements).
+  - Debugging: not com.apple.security.get-task-allow, which notarisation refuses.
+-->
+<plist version="1.0">
+<dict/>
+</plist>

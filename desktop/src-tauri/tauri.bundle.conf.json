@@ -1,0 +1,9 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "bundle": {
+    "externalBin": ["target/pangea-payload/bin/faust", "target/pangea-payload/bin/ninja"],
+    "resources": {
+      "target/pangea-payload/pangea/": "pangea/"
+    }
+  }
+}

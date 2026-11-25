@@ -1,0 +1,12 @@
+{
+  "name": "Ostinato Hands",
+  "slug": "ostinato-hands",
+  "kind": "midi",
+  "bundleId": "com.pangea.ostinato-hands",
+  "fxBundleId": "com.pangea.ostinato-hands.fx",
+  "manufacturerCode": "Pnga",
+  "pluginCode": "Osth",
+  "fxPluginCode": "Ostx",
+  "version": "0.1.0",
+  "description": "Two piano hands in polymeter, three against four by default, over chords in D dorian: a MIDI tool built on Keys, from the MIDI shelf (Pattern Player's engine)."
+}

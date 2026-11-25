@@ -1,0 +1,18 @@
+# JUCE is cloned (or linked) into the shell, never committed: Pangea does not distribute it.
+shell/JUCE
+# The shell's build folders.
+shell/build/
+shell/build-*/
+shell/.cache/
+# The app's dependencies and builds.
+node_modules/
+desktop/dist/
+desktop/src-tauri/target/
+desktop/src-tauri/gen/schemas/
+# package-mac.sh writes the zipped app here.
+/downloads/
+*.component
+*.vst3
+*.o
+*.log
+.DS_Store

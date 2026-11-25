@@ -1,0 +1,6 @@
+{
+  "title": "Pocket Sequencer",
+  "palette": { "bg": "#22302B", "panel": "#2D3D37", "accent": "#D95837", "text": "#F0EEE5" },
+  "knobStyle": "round",
+  "style": "retro"
+}

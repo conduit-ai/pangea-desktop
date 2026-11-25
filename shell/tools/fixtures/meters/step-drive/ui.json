@@ -1,0 +1,240 @@
+{
+  "style": "retro",
+  "title": "Step Drive Filter",
+  "palette": {
+    "bg": "#1d1b22",
+    "text": "#ece6dc",
+    "panel": "#2a2730",
+    "accent": "#ff7a2f"
+  },
+  "knobStyle": "arc",
+  "arrangement": {
+    "layout": "hardware_unit",
+    "madeBy": "planner",
+    "controls": {
+      "Comp/Comp Mix": {
+        "as": "knob",
+        "size": "l",
+        "label": "Mix"
+      },
+      "Drive/Drive dB": {
+        "as": "knob",
+        "size": "l",
+        "label": "Drive"
+      },
+      "Comp/Comp Ratio": {
+        "as": "segmented",
+        "size": "m",
+        "label": "Ratio"
+      },
+      "Comp/Comp Bypass": {
+        "as": "lit_button",
+        "size": "s",
+        "label": "Bypass"
+      },
+      "Drive/Drive Bias": {
+        "as": "knob",
+        "size": "m",
+        "label": "Asymmetry"
+      },
+      "Drive/Drive Tone": {
+        "as": "knob",
+        "size": "m",
+        "label": "Tone"
+      },
+      "Output/Output dB": {
+        "as": "knob",
+        "size": "m",
+        "label": "Output"
+      },
+      "Drive/Drive Bypass": {
+        "as": "lit_button",
+        "size": "s",
+        "label": "Bypass"
+      },
+      "Filter/Filter Mode": {
+        "as": "segmented",
+        "size": "m",
+        "label": "Type"
+      },
+      "Input/Input Trim dB": {
+        "as": "knob",
+        "size": "m",
+        "label": "Input"
+      },
+      "Comp/Gain/Comp Input": {
+        "as": "knob",
+        "size": "l",
+        "label": "Squash"
+      },
+      "Drive/Drive Position": {
+        "as": "segmented",
+        "size": "m",
+        "label": "Position"
+      },
+      "Filter/Filter Cutoff": {
+        "as": "knob",
+        "size": "l",
+        "label": "Cutoff"
+      },
+      "Sequencer/Seq Bypass": {
+        "as": "lit_button",
+        "size": "s",
+        "label": "Bypass"
+      },
+      "Comp/Gain/Comp Output": {
+        "as": "knob",
+        "size": "m",
+        "label": "Makeup"
+      },
+      "Comp/Timing/Comp Attack": {
+        "as": "knob",
+        "size": "m",
+        "label": "Attack"
+      },
+      "Filter/Filter Resonance": {
+        "as": "knob",
+        "size": "l",
+        "label": "Resonance"
+      },
+      "Comp/Timing/Comp Release": {
+        "as": "knob",
+        "size": "m",
+        "label": "Release"
+      },
+      "Sequencer/Clock/Seq Rate": {
+        "as": "knob",
+        "size": "m",
+        "label": "Rate"
+      },
+      "Sequencer/Clock/Seq Sync": {
+        "as": "toggle",
+        "size": "m",
+        "label": "Tempo Sync"
+      },
+      "Sequencer/Pattern/Step 1": {
+        "as": "fader",
+        "size": "m",
+        "label": "Step 1"
+      },
+      "Sequencer/Pattern/Step 2": {
+        "as": "fader",
+        "size": "m",
+        "label": "Step 2"
+      },
+      "Sequencer/Pattern/Step 3": {
+        "as": "fader",
+        "size": "m",
+        "label": "Step 3"
+      },
+      "Sequencer/Pattern/Step 4": {
+        "as": "fader",
+        "size": "m",
+        "label": "Step 4"
+      },
+      "Sequencer/Pattern/Step 5": {
+        "as": "fader",
+        "size": "m",
+        "label": "Step 5"
+      },
+      "Sequencer/Pattern/Step 6": {
+        "as": "fader",
+        "size": "m",
+        "label": "Step 6"
+      },
+      "Sequencer/Pattern/Step 7": {
+        "as": "fader",
+        "size": "m",
+        "label": "Step 7"
+      },
+      "Sequencer/Pattern/Step 8": {
+        "as": "fader",
+        "size": "m",
+        "label": "Step 8"
+      },
+      "Sequencer/Clock/Seq Depth": {
+        "as": "knob",
+        "size": "l",
+        "label": "Depth"
+      },
+      "Sequencer/Clock/Seq Glide": {
+        "as": "knob",
+        "size": "m",
+        "label": "Glide"
+      },
+      "Sequencer/Clock/Seq Division": {
+        "as": "dropdown",
+        "size": "m",
+        "label": "Division"
+      }
+    },
+    "sections": [
+      {
+        "name": "Input",
+        "controls": [
+          "Input/Input Trim dB"
+        ]
+      },
+      {
+        "name": "Drive",
+        "controls": [
+          "Drive/Drive dB",
+          "Drive/Drive Tone",
+          "Drive/Drive Bias",
+          "Drive/Drive Position",
+          "Drive/Drive Bypass"
+        ]
+      },
+      {
+        "name": "Filter",
+        "controls": [
+          "Filter/Filter Cutoff",
+          "Filter/Filter Resonance",
+          "Filter/Filter Mode"
+        ]
+      },
+      {
+        "name": "Sequencer",
+        "controls": [
+          "Sequencer/Clock/Seq Depth",
+          "Sequencer/Clock/Seq Glide",
+          "Sequencer/Clock/Seq Sync",
+          "Sequencer/Clock/Seq Division",
+          "Sequencer/Clock/Seq Rate",
+          "Sequencer/Seq Bypass"
+        ]
+      },
+      {
+        "name": "Pattern",
+        "controls": [
+          "Sequencer/Pattern/Step 1",
+          "Sequencer/Pattern/Step 2",
+          "Sequencer/Pattern/Step 3",
+          "Sequencer/Pattern/Step 4",
+          "Sequencer/Pattern/Step 5",
+          "Sequencer/Pattern/Step 6",
+          "Sequencer/Pattern/Step 7",
+          "Sequencer/Pattern/Step 8"
+        ]
+      },
+      {
+        "name": "Compressor",
+        "controls": [
+          "Comp/Gain/Comp Input",
+          "Comp/Gain/Comp Output",
+          "Comp/Timing/Comp Attack",
+          "Comp/Timing/Comp Release",
+          "Comp/Comp Ratio",
+          "Comp/Comp Bypass"
+        ]
+      },
+      {
+        "name": "Mix and Output",
+        "controls": [
+          "Comp/Comp Mix",
+          "Output/Output dB"
+        ]
+      }
+    ]
+  }
+}

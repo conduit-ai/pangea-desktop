@@ -1,0 +1,12 @@
+{
+  "name": "Pocket Drums",
+  "slug": "pocket-drums",
+  "kind": "midi",
+  "bundleId": "com.pangea.pocket-drums",
+  "fxBundleId": "com.pangea.pocket-drums.fx",
+  "manufacturerCode": "Pnga",
+  "pluginCode": "Pkdr",
+  "fxPluginCode": "Pkdx",
+  "version": "0.1.0",
+  "description": "A drum groove with ghost notes and a fill every few bars: a MIDI tool built on Drums, from the MIDI shelf (Drum Hand's engine)."
+}

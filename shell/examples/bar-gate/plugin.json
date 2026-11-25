@@ -1,0 +1,10 @@
+{
+  "name": "Bar Gate",
+  "slug": "bar-gate",
+  "kind": "effect",
+  "bundleId": "com.pangea.bar-gate",
+  "manufacturerCode": "Pnga",
+  "pluginCode": "Brgt",
+  "version": "0.1.0",
+  "description": "A 16 step gate on the song's bars, written with the step clock (decision 124): it starts and stops with the song and holds open while it is stopped."
+}

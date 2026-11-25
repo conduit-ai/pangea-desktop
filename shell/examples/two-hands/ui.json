@@ -1,0 +1,114 @@
+{
+  "title": "Two Hands",
+  "palette": {
+    "bg": "#1F1B2E",
+    "panel": "#29243B",
+    "accent": "#8FBF9A",
+    "text": "#EDEBE3"
+  },
+  "knobStyle": "arc",
+  "style": "minimal",
+  "layout": {
+    "width": 720,
+    "height": 400,
+    "items": [
+      {
+        "key": "Key",
+        "x": 24,
+        "y": 24,
+        "size": "m"
+      },
+      {
+        "key": "Mode",
+        "x": 168,
+        "y": 24,
+        "size": "l"
+      },
+      {
+        "key": "Rate",
+        "x": 312,
+        "y": 24,
+        "size": "m"
+      },
+      {
+        "key": "Left hand/Accent 1",
+        "x": 16,
+        "y": 160,
+        "size": "m",
+        "label": "Left 1"
+      },
+      {
+        "key": "Left hand/Accent 2",
+        "x": 112,
+        "y": 160,
+        "size": "m",
+        "label": "Left 2"
+      },
+      {
+        "key": "Left hand/Accent 3",
+        "x": 208,
+        "y": 160,
+        "size": "m",
+        "label": "Left 3"
+      },
+      {
+        "key": "Right hand/Accent 1",
+        "x": 328,
+        "y": 160,
+        "size": "m",
+        "label": "Right 1"
+      },
+      {
+        "key": "Right hand/Accent 2",
+        "x": 424,
+        "y": 160,
+        "size": "m",
+        "label": "Right 2"
+      },
+      {
+        "key": "Right hand/Accent 3",
+        "x": 520,
+        "y": 160,
+        "size": "m",
+        "label": "Right 3"
+      },
+      {
+        "key": "Right hand/Accent 4",
+        "x": 616,
+        "y": 160,
+        "size": "m",
+        "label": "Right 4"
+      },
+      {
+        "key": "Tension",
+        "x": 24,
+        "y": 280,
+        "size": "m"
+      },
+      {
+        "key": "Balance",
+        "x": 168,
+        "y": 280,
+        "size": "m"
+      },
+      {
+        "key": "Length",
+        "x": 312,
+        "y": 280,
+        "size": "m"
+      },
+      {
+        "key": "Variation",
+        "x": 456,
+        "y": 280,
+        "size": "m"
+      },
+      {
+        "key": "Amount",
+        "x": 600,
+        "y": 280,
+        "size": "m"
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "title": "Bar Gate",
+  "palette": { "bg": "#1F2326", "panel": "#2B3035", "accent": "#E2B04A", "text": "#EDEAE2" },
+  "knobStyle": "arc",
+  "style": "minimal"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Song Gate",
+  "slug": "song-gate",
+  "kind": "effect",
+  "bundleId": "com.pangea.song-gate",
+  "manufacturerCode": "Pnga",
+  "pluginCode": "Sgte",
+  "version": "0.1.0",
+  "description": "Decision 123's song-synced step example: a gate that follows the song."
+}

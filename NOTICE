@@ -1,0 +1,56 @@
+The Pangea desktop app and plugin shell
+Copyright (C) 2026 Conduit AI Limited
+
+Conduit AI's own code in this repository is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later version. The full
+text of the licence is in LICENSE.
+
+It is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even
+the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero
+General Public License for more details.
+
+This repository is a snapshot of Conduit AI's own repository, published at intervals. SNAPSHOT
+names the commit it came from.
+
+Parts by another author
+
+The Felt look in shell/platform/web (the Felt parts of pangea.css, pangea.js, mapping.js,
+host.js, builder.js and harmony.js, as the first line of each says) and six examples (the whole
+of the logic.cpp of shell/examples/bass-and-drums, hands-and-drums, pocket-drums,
+ostinato-hands, rolling-line and two-hands, with two-hands' README.md and test folder) are not
+Conduit AI's code. Since 25 November 2026 their author offers them, as they are in this
+repository, under the GNU Affero General Public License, version 3 or later, as well as under
+his own licence, at your choice: shell/platform/web/FELT-LICENSE.md has both, and each of the
+six logic.cpp says so. Five of them also carry the MIDI shelf's licence line, which names
+library/midi/LICENSE.md, in Pangea's own repository only; its text is the first part of
+shell/platform/web/FELT-LICENSE.md. So all the code in this repository may be used under the GNU
+Affero General Public License.
+
+Third parties in the shell
+
+shell/NOTICE lists them: JUCE 8.0.10 (GNU Affero General Public License, version 3, or JUCE's own
+licence; not in this repository, fetched from JUCE's release), the VST3 SDK 3.7.12 inside JUCE
+(GNU General Public License, version 3, or Steinberg's licence), the fonts in
+shell/platform/web/fonts (SIL Open Font License 1.1, each with its licence text) and Faust's
+headers (GNU Lesser General Public License, version 2.1 or later, with the Faust exception).
+
+Third parties in the desktop app
+
+- Faust 2.88.0, by GRAME. A packaged app carries the compiler, built by desktop/scripts/build-faust.sh
+  from GRAME's release without changes, under the GNU General Public License, version 2 or later,
+  with its complete source; and its headers and libraries, under the GNU Lesser General Public
+  License, version 2.1 or later, with the Faust exception, each library function as it says.
+  Nothing of Faust is in this repository: the script downloads it and checks its SHA-256.
+- Ninja 1.13.2. A packaged app carries the release binary, under the Apache License 2.0, with its
+  licence text. Not in this repository.
+- CMake 3.31.12, by Kitware (BSD 3-Clause), and JUCE 8.0.10: the app downloads each from its
+  maker's release on the member's Mac and checks its SHA-256. Neither is in this repository or in
+  the app.
+- The app's Rust crates (desktop/src-tauri/Cargo.lock) and JavaScript packages
+  (desktop/pnpm-lock.yaml) are fetched when it is built, each under its own licence: MIT, Apache
+  2.0, BSD, ISC, Zlib, Unicode 3.0, the Unlicense, CC0 and MPL 2.0. The MPL 2.0 comes through
+  Tauri's Rust crates (cssparser, cssparser-macros, dtoa-short, option-ext and selectors), which
+  are in the app, and through the JavaScript build tools (lightningcss, by way of Vite), which only
+  build the page and are not shipped in the app. All of these can be combined with the GNU Affero
+  General Public License, version 3.

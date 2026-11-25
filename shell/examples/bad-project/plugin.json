@@ -1,0 +1,10 @@
+{
+  "name": "Bad Project",
+  "slug": "bad-project",
+  "kind": "instrument",
+  "bundleId": "com.pangea.bad-project",
+  "manufacturerCode": "Pnga",
+  "pluginCode": "Badp",
+  "version": "0.1.0",
+  "description": "Must be refused by check-project.sh: foreign code in the Faust, an include in the logic."
+}

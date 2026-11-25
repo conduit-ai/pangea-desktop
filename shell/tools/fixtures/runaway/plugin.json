@@ -1,0 +1,11 @@
+{
+  "name": "Runaway",
+  "slug": "runaway",
+  "kind": "midi",
+  "bundleId": "com.pangea.runaway",
+  "manufacturerCode": "Pnga",
+  "pluginCode": "Rnwy",
+  "fxPluginCode": "Rnwx",
+  "version": "0.1.0",
+  "description": "A MIDI tool that goes wrong on purpose, for the tests of the step budget (shell/tools/test-budget.sh)."
+}

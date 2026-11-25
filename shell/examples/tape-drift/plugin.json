@@ -1,0 +1,10 @@
+{
+  "name": "Tape Drift",
+  "slug": "tape-drift",
+  "kind": "effect",
+  "bundleId": "com.pangea.tape-drift",
+  "manufacturerCode": "Pnga",
+  "pluginCode": "Tpdr",
+  "version": "0.1.0",
+  "description": "Stereo tape delay with wow and flutter."
+}

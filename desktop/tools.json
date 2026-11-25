@@ -1,0 +1,34 @@
+{
+  "note": "The tools the desktop app carries (faust, ninja) or fetches on the member's Mac (cmake, juce), each pinned to one release at its official address with the SHA-256 GitHub publishes for it. desktop/scripts/build-faust.sh reads faust and ninja when the app is packaged; src-tauri/src/tools.rs compiles cmake and juce in. faust.version must be library/faust-versions.json's native.faust and juce.version the JUCE_VERSION of shell/build.sh; tests hold both.",
+  "faust": {
+    "version": "2.88.0",
+    "url": "https://github.com/grame-cncm/faust/releases/download/2.88.0/faust-2.88.0.tar.gz",
+    "sha256": "e4e175cf236924b5b7d4784cbb8c50cc01e211159e169655dd9e6d8f92b871d9",
+    "bytes": 81488527,
+    "licence": "The compiler as built is GPL-2.0-or-later: COPYING.txt is LGPL-2.1-or-later, and twelve of its source files are GPL-2.0-or-later. Its headers (include/faust) and libraries (share/faust) are LGPL-2.1-or-later with the Faust exception."
+  },
+  "ninja": {
+    "version": "1.13.2",
+    "url": "https://github.com/ninja-build/ninja/releases/download/v1.13.2/ninja-mac.zip",
+    "sha256": "c99048673aa765960a99cf10c6ddb9f1fad506099ff0a0e137ad8960a88f321b",
+    "bytes": 314051,
+    "licenceUrl": "https://raw.githubusercontent.com/ninja-build/ninja/v1.13.2/COPYING",
+    "licenceSha256": "eb7e9ab9690124c5c9f42bdc81383d886a3dede26345b6ed15bbad7caf81f7ea",
+    "licence": "Apache-2.0"
+  },
+  "cmake": {
+    "version": "3.31.12",
+    "url": "https://github.com/Kitware/CMake/releases/download/v3.31.12/cmake-3.31.12-macos-universal.tar.gz",
+    "sha256": "799af7fd545db9bf1b9cfe72f8095880e727a2d4e0df0e3dffc3bc7b95c2d3b0",
+    "bytes": 79954716,
+    "binDir": "CMake.app/Contents/bin",
+    "licence": "BSD-3-Clause"
+  },
+  "juce": {
+    "version": "8.0.10",
+    "url": "https://github.com/juce-framework/JUCE/releases/download/8.0.10/juce-8.0.10-osx.zip",
+    "sha256": "3b7091f0eb5ccb43425b71b4bfe5024173db9f2ace1137d43aef818b2270e13f",
+    "bytes": 48185135,
+    "licence": "AGPL-3.0-only, or JUCE's own licence"
+  }
+}

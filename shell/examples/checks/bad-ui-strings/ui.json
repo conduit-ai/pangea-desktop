@@ -1,0 +1,13 @@
+{
+  "title": "   ",
+  "palette": { "bg": "#EEE5D3", "panel": "#E3D8C2", "accent": "#C8843A", "text": "#2A2620" },
+  "knobStyle": "round",
+  "layout": {
+    "width": 720,
+    "height": 240,
+    "items": [
+      { "key": "", "x": 24, "y": 24, "size": "m" },
+      { "key": "Mix", "x": 24, "y": 24, "size": "m", "label": "A label that runs to forty one characters" }
+    ]
+  }
+}

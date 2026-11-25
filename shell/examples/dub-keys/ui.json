@@ -1,0 +1,20 @@
+{
+  "title": "Dub Keys",
+  "palette": { "bg": "#1F2A24", "panel": "#28362E", "accent": "#E8B84A", "text": "#EDE8DA" },
+  "knobStyle": "arc",
+  "style": "minimal",
+  "layout": {
+    "width": 720,
+    "height": 336,
+    "items": [
+      { "key": "Keys/Attack", "x": 24, "y": 24, "size": "m" },
+      { "key": "Keys/Release", "x": 128, "y": 24, "size": "m" },
+      { "key": "Keys/Tone", "x": 232, "y": 24, "size": "l" },
+      { "key": "Echo/Sync", "x": 376, "y": 32, "size": "s" },
+      { "key": "Echo/Time", "x": 472, "y": 24, "size": "m" },
+      { "key": "Echo/Feedback", "x": 576, "y": 24, "size": "m", "label": "Repeats" },
+      { "key": "Echo/Mix", "x": 472, "y": 176, "size": "m" },
+      { "key": "Level", "x": 576, "y": 176, "size": "l" }
+    ]
+  }
+}
